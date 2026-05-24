@@ -118,25 +118,11 @@ class="fixed left-0 top-0 h-screen w-[260px] bg-white border-r border-[#EDF1F4] 
 
 
     <!-- Tombol keluar -->
-    <div class="p-5">
-
-        <button
-        class="w-full
-        border-2
-        border-[#12B8B4]
-        text-[#12B8B4]
-        rounded-2xl
-        py-4
-        font-bold
-        hover:bg-[#12B8B4]
-        hover:text-white
-        transition">
-
-            <i class="fa-solid fa-right-from-bracket mr-2"></i>
-
-            Keluar
-
-        </button>
+    <a href="/?menu=login"
+    class="w-full border-2 border-[#12B8B4] text-[#12B8B4] rounded-2xl py-4 font-bold hover:bg-[#12B8B4] hover:text-white transition flex items-center justify-center">
+        <i class="fa-solid fa-right-from-bracket mr-2"></i>
+        Keluar
+    </a>
 
     </div>
 
