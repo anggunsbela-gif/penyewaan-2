@@ -207,7 +207,62 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 
     @break
 
+    
+    @case('detail-pesanan')
 
+    @include('sections.sidebar')
+
+    <div class="md:ml-[260px] min-h-screen">
+        @include('sections.topbar')
+
+        <main class="p-8">
+            @include('pesanan.detail')
+        </main>
+    </div>
+
+    @break
+
+    @case('detail-pesanan-berjalan')
+
+    @include('sections.sidebar')
+
+    <div class="md:ml-[260px] min-h-screen">
+        @include('sections.topbar')
+
+        <main class="p-8">
+            @include('pesanan.detail-berjalan')
+        </main>
+    </div>
+
+    @break
+
+    @case('detail-pesanan-dibatalkan')
+
+    @include('sections.sidebar')
+
+    <div class="md:ml-[260px] min-h-screen">
+        @include('sections.topbar')
+
+        <main class="p-8">
+            @include('pesanan.detail-dibatalkan')
+        </main>
+    </div>
+
+    @break
+
+    @case('detail-pesanan-selesai')
+
+    @include('sections.sidebar')
+
+    <div class="md:ml-[260px] min-h-screen">
+        @include('sections.topbar')
+
+        <main class="p-8">
+            @include('pesanan.detail-selesai')
+        </main>
+    </div>
+
+    @break
 
     @default
 

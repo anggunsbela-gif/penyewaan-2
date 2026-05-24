@@ -387,10 +387,33 @@ return strtolower($item['status']) == strtolower($status);
             {{ $pesanan['harga'] }}
         </p>
 
-        <button class="mt-3 border px-5 py-2 rounded-xl font-bold text-[#123C76]">
-            Lihat Detail
-        </button>
+        @php
+        $link =
+        $pesanan['status']=='Menunggu'
+        ? '/?menu=detail-pesanan'
+        : (
+        $pesanan['status']=='Berjalan'
+        ? '/?menu=detail-pesanan-berjalan'
+        : (
+        $pesanan['status']=='Selesai'
+        ? '/?menu=detail-pesanan-selesai'
+        : (
+        $pesanan['status']=='Dibatalkan'
+        ? '/?menu=detail-pesanan-dibatalkan'
+        : '#'
+        )
+        )
+        );
+        @endphp
 
+
+        <a
+        href="{{ $link }}"
+        class="mt-3 border px-5 py-2 rounded-xl font-bold text-[#123C76] inline-block">
+
+        Lihat Detail
+
+        </a>
     </div>
 
 </div>
@@ -402,7 +425,7 @@ return strtolower($item['status']) == strtolower($status);
 </section>
 
 <p class="text-center text-sm text-gray-500">
-    © 2025 GoRent. All rights reserved.
+    © 2026 GoRent. All rights reserved.
 </p>
 
 </div>
