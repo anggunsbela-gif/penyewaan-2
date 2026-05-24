@@ -117,7 +117,11 @@
                         <p class="text-gray-500">Tingkatkan keamanan akun Anda</p>
                     </div>
 
-                    <div class="w-14 h-8 bg-gray-300 rounded-full"></div>
+                    <button
+                    type="button"
+                    class="w-14 h-8 bg-gray-300 rounded-full flex items-center px-1">
+                        <span class="w-6 h-6 bg-white rounded-full shadow"></span>
+                    </button>
                 </div>
             </section>
 
@@ -175,7 +179,7 @@
     </div>
 
     <p class="text-center text-sm text-gray-500">
-        © 2025 GoRent. All rights reserved.
+        © 2026 GoRent. All rights reserved.
     </p>
 
 </div>

@@ -107,10 +107,24 @@ Temukan berbagai pilihan mobil terbaik untuk perjalanan Anda
 <!-- Kanan -->
 <div class="flex items-center gap-6">
 
-<button class="relative text-[#123C76] text-2xl">
+<a
+href="/?menu=notifikasi"
+class="relative text-[#123C76] text-2xl block">
+
 <i class="fa-regular fa-bell"></i>
-<span class="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full"></span>
-</button>
+
+<span
+class="
+absolute
+-top-1
+-right-1
+w-3
+h-3
+bg-red-500
+rounded-full">
+</span>
+
+</a>
 
 
 <div class="flex items-center gap-3">

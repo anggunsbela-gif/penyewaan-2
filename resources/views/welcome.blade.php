@@ -264,6 +264,24 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 
     @break
 
+    @case('notifikasi')
+
+    @include('sections.sidebar')
+
+    <div class="md:ml-[260px] min-h-screen">
+
+        @include('sections.topbar')
+
+        <main class="p-8">
+
+            @include('notifikasi.index')
+
+        </main>
+
+    </div>
+
+    @break
+
     @default
 
         @include('dashboard.dashboard')
